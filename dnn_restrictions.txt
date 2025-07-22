@@ -1,0 +1,1 @@
+﻿Dnn restrictions:Internet.com:Do not allow more than 100 mbps for average speedInternetdata.com:The max data allowance is 10GB per userInternetdata3.com:The max data allowance is 10GB per userInternetdata2.com:The max data allowance is 5GB per user

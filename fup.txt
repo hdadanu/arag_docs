@@ -1,0 +1,27 @@
+Title: Understanding Fair Usage Policy (FUP) in Mobile Data Plans
+
+Overview:
+Fair Usage Policy (FUP) is implemented by mobile network operators to ensure that all users have equal access to network resources. While many data plans advertise "unlimited data", the FUP defines a high-speed data limit, beyond which the data speed may be reduced or redirected.
+
+Key Points of FUP:
+	1	High-Speed Data Threshold:
+	◦	Customers can use high-speed data up to a certain limit (e.g., 50 GB per month).
+	◦	This threshold is known as the data allowance.
+	2	Speed Reduction After Limit:
+	◦	After crossing the data limit, speed may be reduced to 128 Kbps or lower.
+	◦	This ensures fair bandwidth distribution among users.
+	3	FUP Redirection URL:
+	◦	Users exceeding their data allowance may be redirected to a FUP notice page, such as: 
+	4	Plan Examples:
+	◦	Plan A: 30 GB high-speed data, then 512 Kbps
+	◦	Plan B: Unlimited data with 50 GB @ 5G speeds, post which 3G speeds apply
+	5	Notification Policy:
+	◦	Users may receive alerts (SMS/email/app notification) when they approach or exceed their FUP threshold.
+	6	Video Streaming:
+	◦	Streaming speeds (e.g., YouTube, Netflix) may be capped even before FUP is reached.
+	◦	Example: "Video streaming up to 3 Mbps on unlimited plans."
+
+Purpose of FUP: FUP prevents network congestion and ensures a consistent quality of service for all users, especially during peak hours. Heavy data consumers are throttled after fair usage to maintain fairness.
+
+Example Clause (for telecom plans):
+"After the usage of 50 GB high-speed data, the speed will be reduced to 128 Kbps for the rest of the billing cycle. Users will be notified and redirected to www.redirect.net/fup-info for details.

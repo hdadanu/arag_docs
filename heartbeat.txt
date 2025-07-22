@@ -1,0 +1,28 @@
+Configuring the Heartbeat Parameters for UPF
+This section describes how to configure the heartbeat feature for the UPF.
+
+To configure the heartbeat feature for UPF at the interface-level, use the following configuration:
+
+configure 
+  endpoint pfcp 
+  interface n4 
+  heartbeat  
+     interval interval 
+     max-retransmissions max_retry 
+     retransmission-timeout retry_count 
+     end 
+NOTES:
+
+endpoint pfcp — Enters the endpoint configuration mode.
+
+interface — Configures the N4 interface over which the heartbeat messages are exchanged between SMF and UPF.
+
+heartbeat — Enters the heartbeat configuration.
+
+interval interval — Specifies the heartbeat interval in seconds. The accepted range is 60–360. The default value is 60 seconds.
+
+Setting the interval to "0", disables the heartbeat feature.
+
+max-retransmissions max_retry — Specifies the maximum retries for the Packet Forwarding Control Protocol (PFCP) heartbeat request. The accepted range is 0–10. The default value is 3.
+
+retransmission-timeout retry_count — Specifies the heartbeat retransmission timeout in seconds. The accepted range is 1–20. The default value is 5.

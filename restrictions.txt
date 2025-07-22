@@ -1,0 +1,1 @@
+Date: 04/06/2025DocType: Operator restrictions:AT&T:Do not allow more than 100 mbps for average speedTMO:Change dnn value to tmodnn.com
