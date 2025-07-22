@@ -1,1 +1,118 @@
-﻿Date: 03/05/25Doc type: operator default values1. AT&T - Premium Unlimited Plan• Price: $125/month per line (with 4 lines)• Data: Unlimited high-speed data with a 30 GB FUP cap• Hotspot: 139 GB per line• Streaming: 4K UHD streaming supported• Security: ActiveArmor advanced security (Wi-Fi protection, identity monitoring)• International: Unlimited usage in 19 Latin American countries• DNN: internet1.att.com• Avg Speed: 80 Mbps (high-speed data)• Video Streaming Speed: Capped at 55 Mbps• FUP Redirection URL: www.limitexceeded.com• FUP_redirection_url default value is fupdefault.com2. T-Mobile (TMO) - Magenta MAX• Price: $90/month• Data: Unlimited data, no throttling• Hotspot: 40 GB of high-speed tethering• Streaming: 4K UHD available• Extras: Netflix subscription included• DNN: tmobile.netdata• Avg Speed: 70 Mbps• Video Speed: Up to 50 Mbps• FUP Redirection: www.fup.tmo.com3. Verizon - 5G Get More Plan• Price: $105/month per line• Data: Unlimited with 40 GB high-speed allowance• Hotspot: 139 GB hotspot data• Security: Advanced mobile security tools• Streaming: UHD video supported• DNN: internet2.verizon.com• Avg Speed: 70 Mbps• Video Streaming: Up to 65 Mbps• FUP Redirection: www.redirectdata1.com4. Jio (India) – Postpaid Plus• Price: ₹699/month• Data: 100 GB/month, rollover up to 200 GB• Hotspot: 20 GB per month• OTT Apps: Netflix, Prime Video, Disney+ Hotstar• DNN: jio.apn.net• Avg Speed: 60 Mbps• Streaming Speed: 35 Mbps• FUP Redirect: www.jio.com/fup5. Vodafone (UK) – Unlimited Max• Price: £30/month• Data: Unlimited (FUP after 100 GB)• Hotspot: 50 GB• Roaming: Free in EU and UK• DNN: vf-data.com• Avg Speed: 65 Mbps• Video Speed: 25 Mbps• FUP URL: www.vodafone.com/fup-info
+📄 Document: Understanding Operators in Telecom
+Title: Telecom Operators and Their Roles
+1. What is a Telecom Operator?
+
+A telecom operator (or telecommunications service provider) is a company that provides communication services such as voice, data, and messaging to consumers and businesses. These services are delivered via wireless or wired infrastructure.
+
+Examples include:
+
+Verizon (USA)
+
+Airtel (India)
+
+Vodafone (UK)
+
+T-Mobile (Germany/USA)
+
+2. Types of Operators
+
+There are different categories of telecom operators based on the services they provide:
+
+MNO (Mobile Network Operator):
+Owns the entire mobile infrastructure and spectrum.
+Example: Verizon, AT&T, Reliance Jio.
+
+MVNO (Mobile Virtual Network Operator):
+Rents capacity from MNOs and resells under its brand.
+Example: Google Fi, Tesco Mobile.
+
+ISPs (Internet Service Providers):
+Provide internet access via fiber, DSL, or wireless.
+Example: Comcast, ACT Broadband.
+
+3. Operator Configuration Parameters in 5G Core
+
+In a 5G Core Network, operators are identified and configured using several parameters:
+
+PLMN ID (Public Land Mobile Network ID)
+Format: MCC + MNC (e.g., 310260 for T-Mobile USA)
+
+DNN (Data Network Name)
+Represents the APN or service gateway (e.g., internet.operator.com)
+
+Slice/Service Type (SST, SD)
+Defines the use case (e.g., eMBB, URLLC)
+
+QoS Profiles and 5QI
+Control latency, bandwidth, and priority
+
+4. Tariff and Plan Configuration
+
+Each operator typically publishes tariff plans containing:
+
+monthly_rental
+
+data_allowance
+
+voice_call_limit
+
+avg_speed_data_allowance
+
+data_speed_video_stream
+
+FUP_redirection_url
+
+validity_days
+
+Example:
+{
+  "operator": "Verizon",
+  "plan_name": "SmartConnect 599",
+  "monthly_rental": "599",
+  "data_allowance": "120 GB",
+  "avg_speed_data_allowance": "100 Mbps",
+  "data_speed_video_stream" : "150 Mbps"
+  "FUP_redirection_url": "http://verizon.com/fup",
+  "validity": "28 Days"
+}
+5. Regulatory and Compliance Aspects
+
+Operators are regulated by national telecom authorities:
+
+FCC (USA)
+
+TRAI (India)
+
+Ofcom (UK)
+
+They must comply with spectrum licensing, lawful interception, QoS guarantees, and customer data privacy regulations.
+
+6. Operator's Role in 5G Networks
+
+In 5G, the operator is responsible for:
+
+Network slicing
+
+Charging policies (CHF)
+
+Policy control (PCF)
+
+Quality of Service (QoS) enforcement via UPF
+
+Provisioning and authentication (UDM/AUSF)
+
+7. Emerging Trends in Operator Models
+
+Private 5G Networks by enterprises
+
+Cloud-native telecom cores using containers
+
+Roaming & eSIM enable dynamic operator switching
+
+AI/ML in network optimization and predictive maintenance
+
+Summary:
+
+Operators are central to delivering end-to-end connectivity and QoS. Their configuration, policy enforcement, and tariffs form the core of telecom service delivery in both legacy and 5G networks.
+
+
